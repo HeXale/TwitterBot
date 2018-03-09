@@ -18,11 +18,15 @@ T.get('search/tweets', params, function(err, data, response) {
         for (let i=0; i < data.statuses.length; i++) {
             let id = {id: data.statuses[i].id_str};
         }
-        T.post('favorites/create', id, function(err, response)) {
-            if (!err) {
-                // Here comes Johnny
+        T.post('favorites/create', id, function(err, response))
+        {
+            if (err) {
+                console.log(err[0]."It appears that Johnny wasn't there")
             } else {
-                console.log("It appears that Johnny wasn't there")
+                let username = response.user_screen_name;
+                let tweetId = response.id_str;
+
+                console.log('Faved :'; 'https://twitter.com/${username}/status/${tweetId}')
             }
         }
     } else {
