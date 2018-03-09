@@ -1,0 +1,22 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "Twitter bot that fav tweets where @hexxalle is mentionned",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeXale/TwitterBot.git"
+  },
+  "author": "William Allain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeXale/TwitterBot/issues"
+  },
+  "homepage": "https://github.com/HeXale/TwitterBot#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
